@@ -9,6 +9,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * 
+ * @author adri4
+ */
+
 public class MainWindow extends JFrame {
 
     JPanel cards;
@@ -19,6 +24,11 @@ public class MainWindow extends JFrame {
     PlayerSelectScreen s2;
     CustomizeBoardScreen s3;
     BoardScreen s4;
+    
+    /**
+     * 
+     * @param cardName 
+     */
 
     public void showCard(String cardName) {
         cl.show(cards, cardName);

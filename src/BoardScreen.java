@@ -11,6 +11,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+/**
+ * 
+ * @author adri4
+ */
+
 public class BoardScreen extends JPanel {
 
     /**
@@ -35,6 +40,8 @@ public class BoardScreen extends JPanel {
 
     JButton go;
     JButton quit;
+    
+    
 
     public void quitButtonActionListener() {
         if (JOptionPane.showConfirmDialog(this, "Are you sure?") == JOptionPane.OK_OPTION) {
@@ -47,7 +54,10 @@ public class BoardScreen extends JPanel {
         //mw.setBoard();
         mw.resetAll();
     }
-
+/**
+ * 
+ * @param m 
+ */
     public void setMaxPlayers(int m) {
         maxPlayers = m;
     }
@@ -75,7 +85,10 @@ public class BoardScreen extends JPanel {
         }
 
     }
-
+/**
+ * 
+ * @param mw MainWindow
+ */
     public BoardScreen(MainWindow mw) {
         this.mw = mw;
 

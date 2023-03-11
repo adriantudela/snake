@@ -9,6 +9,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
+/**
+ * 
+ * @author adri4
+ */
+
 //needs massive aesthetic rewrites
 public class PlayerSelectScreen extends JPanel {
 
@@ -23,7 +28,7 @@ public class PlayerSelectScreen extends JPanel {
     public void quitButtonActionListener() {
         mw.showCard("One");
     }
-
+    
     public void goButtonActionListener() {
         playerOptions();
         mw.s4.setUpPlayers();
@@ -41,6 +46,11 @@ public class PlayerSelectScreen extends JPanel {
         }
         mw.s4.setMaxPlayers(m);
     }
+    
+    /**
+     * 
+     * @param mw mainWindow
+     */
 
     public PlayerSelectScreen(MainWindow mw) {
         this.mw = mw;
